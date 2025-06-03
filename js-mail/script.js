@@ -17,7 +17,7 @@ let guests = [
     "edoardo@duck.com",
     "gianni@duck.com",
     "sorina@duck.com"
-]
+];
 
 // Chiedi all’utente la sua email
 // Procederei creando un prompt con richiesta email - verificare se c'è un tipo specifico - e salvando il dato in una variabile 'userEmail'
@@ -30,8 +30,8 @@ let userEmail = prompt('Hi! Please enter your email address');
 let isPresent = null
 
 for (i = 0; i < guests.length; i++) {
-    // Poi verificherei che userEmail sia presente in guests abbinando a isPresente il valore true
-    if (userEmail == guests[i]) {
+    // Poi verificherei che userEmail sia presente in guests abbinando a isPresent il valore true
+    if (userEmail === guests[i]) {
         isPresent = true;
         // stampa un messaggio appropriato sull’esito del controllo
         // Farei un console.log con un messaggio positivo in caso l'inclusione sia verificata 
