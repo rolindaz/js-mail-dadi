@@ -16,3 +16,16 @@ if (playerNumber > pcNumber) {
 } else {
     console.log(alert('Incredibile, è un pareggio!'));
 };
+
+// Correzione in classe:
+
+let playerNumber1 = Math.floor(Math.random() * 6) + 1, pcNumber1 = Math.floor(Math.random() * 6) + 1;
+console.log(`Numero giocatore: ${playerNumber1}; Numero computer: ${pcNumber1}`, alert(`I dadi sono tratti! Chi vincerà?`));
+
+if (playerNumber1 > pcNumber1) {
+    console.log(alert('Congratulazioni, hai vinto!'));
+} else if (pcNumber1 > playerNumber1) {
+    console.log(alert('Vince il computer!'));
+} else {
+    console.log(alert('Incredibile, è un pareggio!'));
+};
